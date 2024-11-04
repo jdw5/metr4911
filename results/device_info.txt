@@ -1,0 +1,27 @@
+a100 + CPU
+----------------------------------------
+System Information:
+CPU: x86_64
+Physical cores: 8
+Total cores: 8
+Max CPU frequency: 0.0 MHz
+Current CPU frequency: 2894.562 MHz
+CPU Usage: 1.7%
+RAM: Total 93.88 GB, Available 87.80 GB, Usage 6.5%
+GPU: NVIDIA A100-PCIE-40GB
+GPU Memory: Total 39.39 GB, Allocated 0.00 GB, Cached 0.00 GB
+----------------------------------------
+
+p100 + CPU
+----------------------------------------
+System Information:
+CPU: x86_64
+Physical cores: 20
+Total cores: 20
+Max CPU frequency: 3100.0 MHz
+Current CPU frequency: 3012.0256999999997 MHz
+CPU Usage: 16.5%
+RAM: Total 251.55 GB, Available 225.52 GB, Usage 10.4%
+GPU: Tesla P100-PCIE-16GB
+GPU Memory: Total 15.90 GB, Allocated 0.00 GB, Cached 0.00 GB
+----------------------------------------

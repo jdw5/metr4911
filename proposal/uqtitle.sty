@@ -1,0 +1,86 @@
+%*************************************
+% UQ Thesis Title Page Formatting Package
+%*************************************
+\ProvidesPackage{uqtitle}[2018/03/19 v.01 UQ thesis title template]
+\RequirePackage{graphicx}
+%This package formats the front matter for theses at
+%The University of Queensland.
+%Based on https://en.wikibooks.org/wiki/LaTeX/Title_Creation
+
+%*************************************
+% Define new 'storing' commands and set defaults.
+%*************************************
+%Current degree.
+\newcommand*{\currentdegrees}[1]{\gdef\@currentdegrees{#1}}
+\newcommand*{\@currentdegrees}{Specify your current degrees}
+
+\newcommand*{\studentnumber}[1]{\gdef\@studentnumber{#1}}
+\newcommand*{\@studentnumber}{Specify your student number}
+
+\newcommand*{\subtitle}[1]{\gdef\@subtitle{#1}}
+\newcommand*{\@subtitle}{Specify the subtitle}
+
+
+%Degree you are submitting for.
+\newcommand*{\submittedfor}[1]{\gdef\@submittedfor{#1}}
+\newcommand*{\@submittedfor}{Specify degree you are submitting for}
+
+%School you are submitting under.
+\newcommand*{\school}[1]{\gdef\@school{#1}}
+\newcommand*{\@school}{School of Hard Knocks}
+
+%Renew the maketitle command.
+\renewcommand*{\maketitle}{%
+
+%*************************************
+% Title Page layout
+%*************************************
+\pagestyle{empty}	
+%Suppress the header.
+\rmfamily					
+%Make sure we have Roman font family.
+
+%Include the university shield.
+%CHANGE TO EPS IF REQUIRED.
+\noindent
+\vfill
+\begin{center}
+	\includegraphics[width=.65\textwidth]{UQ-Colour-Logo.png}
+\end{center}
+
+\vspace{24 pt}
+
+\begin{center}
+    \Huge\bfseries
+	\thetitle
+\end{center}
+
+\vspace{12 pt}
+
+\begin{center}
+    \Huge
+	\textit{\@subtitle}\\
+\end{center}
+
+\vspace{24 pt}
+
+\begin{center}
+	\Large
+    \theauthor \\
+		\@studentnumber
+\end{center}
+
+\vspace{108 pt}
+
+\begin{center}
+	\Large
+    \thedate{}
+\end{center}
+
+\begin{center}
+    \Large
+\textit{The University of Queensland}\\
+\Large
+	\@school{}
+\end{center}
+}

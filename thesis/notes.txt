@@ -1,0 +1,107 @@
+[1] https://ieeexplore.ieee.org/document/9926408
+There are mainly two groups of convolution approaches with respect to data transformation within production machine learning frameworks, such as PyTorch [4] and TensorFlow
+
+[2] https://arxiv.org/abs/1807.11164 
+n particular, a recent study [2] reported that, in CNN inference, there are 50%-90% of the total operations, including pooling, ReLU, and fully-connected, that are convolution operations
+
+[3] https://arxiv.org/abs/1703.09039
+convolution accounts for over 90% of the total execution time of many popular neural networks
+
+[4] https://ieeexplore.ieee.org/document/9912002
+recent GPUs use Tensor cores to speed up the general matrix multiplication (GEMM), which is the heart of deep learning
+Streaming Processors in such GPUs also contain CUDA cores to implement general computations. While the Tensor cores can significantly improve the performance of GEMM, the CUDA cores remain idle when Tensor cores are running
+This leads to inefficient resource utilization. In this work, we propose to offload part of the GEMM operations from Tensor cores to CUDA cores to fully utilize GPU resources
+By trading off some precision, Tensor cores can achieve an order of magnitude of speed-up for general matrix multiplication (GEMM) operation
+This leads to a significant acceleration in the overall performance of neural network applications
+A GPU consists of multiple Streaming Multiprocessors (SMs) that run CUDA kernels. For instance, there are 80 SMs in V100 and 108 SMs in A100 NVIDIA's GPUs. Each SM contains thousands of registers, several caches, warp schedulers, and execution cores. CUDA cores exist in all SMs and each CUDA core contains functional units to perform general integer and floating-point operations. Using the V100 GPU as an example, each SM is partitioned into four sub-cores with each sub-core having a single warp scheduler and dispatch unit. Each SM sub-core has its dedicated LO instruction cache and a branch unit (BRU). In every clock cycle, a sub-core can process one warp instruction and feeds into the shared MIO unit which contains the Texture Cache, L1 Data Cache, and Shared Memory
+The CUDA programming model provides an abstraction of the GPU architecture, acting as a bridge between an application and its implementation on hardware. In a GPU, thousands of threads can run in parallel, and a function executed by different threads at the same time is called a kernel. A kernel launches an array of thread blocks and each thread block is a set of concurrently executing threads that reside in the same SM. Once a thread block is assigned to an SM, it will be further divided into a set of warps. Each group of 32 consecutive threads constitutes a warp which is the primary execution unit in an SM. Each SM contains warp schedulers that are responsible for scheduling the warps to the computing cores.
+
+[5] https://ieeexplore.ieee.org/document/1227264
+This design exploits fine grain parallelism and the high memory bandwidth available in an FPGA (field programmable gate array) by integrating 95 simple processors and memory on a single FPGA chip
+Although field programmable gate arrays (FPGAs) can have high performance gains over equivalent microprocessor based systems, they have the disadvantage that the design time is much higher than for an equivalent software based system
+
+In this paper, we present a parallel single instruction multiple data stream (SIMD) processor which aims to achieve high performance, yet be programmable in software so that the FPGA design need not be changed for different applications
+Thus the SIMD implementation was 14× faster than the software based implementation on a 1.5 GHz Pentium
+
+[6] https://ieeexplore.ieee.org/document/4484744
+Embedded image or signal processing systems require high performance and highly integrated implementation solutions
+The domain of interest considered here concerns defense and aerospace applications like smart cameras, airborne radar, etc
+Very often, a FPGA is used to implement (to “hardwire”) a specific algorithm. Due to the increasing complexity of algorithms in recent systems, most often, FPGA can implement only some parts of the algorithm while the other parts need to be coded in a DSP
+Compared to classical FPGA implementations, not only it allows to dramatically reduce development and evolution costs but it also gives access to sophisticated data dependent algorithms such as the ones required to make systems more intelligent
+
+[7] https://ieeexplore.ieee.org/document/7173372
+With a convolution mask, it requires multiplications and additions, as well as accesses to the input image data for the calculation of a single output pixel. A huge demand for computational power and memory bandwidth would be resulted if real-time processing of input images is required
+A convolution operation can achieve blurring, sharpening, noise reduction, edge detection and other useful imaging operations depending on the selection of values in the convolution kernel
+ 
+The implementation of convolution is not trivial because it is not only computationally expensive but also memory-intensive and requires a significant amount of computational power. In order to calculate an output pixel for a given mask of size m×U, m×n multiplications and m×n−1 additions are required. Therefore, in order to perform a two dimensional convolution on a 256×256 gray scale image and 3×3 mask a total of 589,824 multiplications and 65,535 additions are required.
+In this method, BRAM is used to store a 133×105 test image using. coe file which is generated with Matlab tool. An image controller is designed as a Finite State Machine (FSM) using VHDL to access the stored image in the ROM. The obtained image and mask pixels are controlled by using pixel and mask read controller block. The multiplier block generates an output which is represented using 2n bits. The multiplier inputs are represented using n bits [8]. In this work n was set equal to 8. The multiplier outputs are then given to an adder which provides a 18 bits output. The adder output is the two-dimensional convolution result between the test image and the 3×3 Gaussian mask. The block diagram representation of two-dimensional convolutions is shown below:
+[8] https://ieeexplore.ieee.org/document/8623662 
+The input face image is sent to the first convolution-pooling module, and then under the control of the controller, the feature maps of the input face image are extracted by the feedforward network, and the face image is finally classified by the softmax module. The controller is implemented in state machine.
+This paper presents a FPGA implementation of face recognition system based on convolution neural network. The hardware architectures for convolution layers, pooling layers, full-connected layer and softmax layer are designed. In each convolution layer, the parallelisms among convolution kernels and among feature maps are explored, and the convolution operations are carried out in parallel. The pooling operations for different feature maps are also computed in parallel. The Verilog HDL modules for the architectures are designed, simulated and synthesized to FPGA. The result shows that the architectures designed in this paper are correct and effective.
+
+[9] https://ieeexplore.ieee.org/document/5346737 
+The proposed circuit uses only 5mw and saves almost 35% area and it takes 20ns to complete. This shows improvement of more than 50% less power. As FPGA
+
+[10] https://ieeexplore.ieee.org/document/8438987
+The FPGA design achieves 20× speedup if compared to CPU.
+
+[11] https://ieeexplore.ieee.org/abstract/document/8906726
+However, it requires a massive number of multiplication and accumulation (MAC) computations with high-power consumption to realize it, and higher recognition accuracy is desired for modern tasks
+sparseness technique to eliminate unused weights
+
+[12] https://ieeexplore.ieee.org/document/9207281
+eural network deployment to the target environment is considered a challenging task especially because of heavy burden of hardware requirements that DNN models lay on computation capabilities and power consumption. In case of low power edge devices, such as GNA - neural coprocessor, quantization becomes the only way to make the deployment possible
+We propose a novel quantization algorithm capable of reducing DNNs precision to 16-bit or 8-bit integer with negligible drop in accuracy (less than 0.1 percent).
+Neural Network quantization is often used for reduction of memory consumption and energy needed to compute the network. It happens due to reduction of bits required to store a single weight - from 32-bit floating point number to, for example, 8-bit integer. The biggest challenge is to keep accuracy level at the appropriate level and minimize its drop after network quantization
+These computational platforms should be not only distributed and effective, but also robust to unit failures, self-improving in time and should avoid central control
+From the authors point of view the following gaps should be closed in future: considering the case of large and sparse weight matrices during the quantization phase, introduce automatic detection of the initial layer precision for more flexible quantization scheme and extending support for convolutional layers with arbitrary number of channels and kernel size. These additional features will allow to reduce the computational complexity and the accuracy drop after network quantization..
+
+[13] https://ieeexplore.ieee.org/document/8367194
+In order to utilize CNN in the embedded environment based on this problem consciousness, it is necessary to research the technique of reducing the size of the neural networks without changing the performance. For example, in FPGA-based hardware, the number of multipliers required for operation is reduced according to the size of bits representing input data[5]. Therefore, it is possible to reduce the number of FPGA-based hardware multipliers that actually perform computation by reducing the bit size of connection weights from the neuron to neuron. As a result, it is possible to increase the power efficiency of the hardware, and the real-time property of the object recognition model in the embedded environment can be secured.
+In the convolution layer, a feature map is generated by performing a convolution of input data and filters. In the pooling layer, the feature map become smaller because of a result of the subsampling from original feature map, and the amount of computation is reduced to the next layer. In the fully-connected layer, the characteristics of the input data obtained through repetition of convolution and pooling are used as input data of fully-connected layer to perform final label classification. In this way, the CNN extracts various characteristics of the input data through the convolution layer and the pooling layer, and performs final object recognition in the fully-connected layer, thereby achieving classification accuracy exceeding human object recognition accuracy
+[14] https://ieeexplore.ieee.org/document/10090153
+ue to the limited internal resources of the FPGA, the entire MobileNet network model cannot be implemented on the FPGA in a tiled architecture, and there is a very high similarity in the computing methods between the various layers of the MobileNet. Therefore, the entire network is implemented by time-division multiplexing of single-layer computing resources. The image buffer areas of the depth convolution operation unit and the point convolution operation unit in this module are both double-buffered structures: one is the working buffer, which is responsible for storing the output feature map of the previous layer of network; the other is the result buffer, which is responsible for storing this Intermediate results of the layer network.
+A system architecture is designed to effectively reduce the number of communications between the processor and the FPGA
+The accelerator proposed in this paper can achieve 135.2 FPS when the operating frequency is 100 MHz
+
+[15] https://ieeexplore.ieee.org/document/10396531
+Convolutional neural network (CNN) algorithm is often applied to face recognition, object detection and other scenes requiring high real-time and low power consumption on embedded platforms. However, such platforms usually cannot be equipped with general-purpose programmable accelerators such as GPUs due to the limited resources
+Some lightweight networks, such as MobileNet, in order to deepen the network depth without increasing the number of network parameters and the amount of operations, will use depthwise separable convolution instead of standard convolution. So far, there have been many accelerators designed for these networks [2] -[4], and balancing performance and resource consumption brings new challenges to the design of CNN accelerators.
+[16] https://ieeexplore.ieee.org/document/8425399
+The footprint of these networks is huge as well as their computational and communication needs. In order to ease the pressure on resources, research indicates that in many cases a low precision representation (1-2 bit per parameter) of weights and other parameters can achieve similar accuracy while requiring less resources
+We propose a streaming model based on functional decomposition of the computations, which are embedded in data flow engines (DFEs) based on FPGAs
+This work focuses on developing a streaming architecture that uses dataflow-based functional decomposition in order to efficiently run QNN s
+we chose a streaming architecture in which the output of each layer is fed to the input of the next one
+Unlike a traditional approach, in which the computation of the current layer starts once the previous one has finished, streaming architecture allows the current layer to begin its output calculation once enough data has been accumulated in its internal buffer
+cales well for large inputs size and large NN
+Although GPUs outperform our implementation with large inputs, the proposed architecture is still fast enough to meet real-time requirements, achieving more than 60 fps for all types of inputs
+
+]17] https://ieeexplore.ieee.org/document/9714403 
+Figure 3 shows a generic high-level system architecture of the proposed BNN architecture. The BNN design is connected to a DDR memory via a Direct Memory Access (DMA) IP using the AXI-4 Stream bus. Two fixed memory areas are used to store input images and output classification from the BNN design in the DDR memory. The DMA block provides the initial configuration’s start address and data length of these two memory areas. Each input pixel from the input memory area is sequentially delivered to the streaming BNN architecture. After a particular latency, output classification is back to the second DDR memory area. Depending on the design’s unrolling levels, which would discuss in the next section, the bandwidth of the streaming data bus can be changed to satisfy the requirements
+This approach is achieved by dividing an inference workload into a layer granularity, in which the number of pipeline stages is equal to the number of layers. This way, input pixels are received continuously, and every layer can be simultaneously processed, resulting in the highest performance. Additionally, because the output of a previous layer is directly delivered to the next, without any intermediate storage, the proposed accelerator can mitigate propagation delay and reduce a significant amount of memory
+
+[18]  https://arxiv.org/pdf/1712.08934
+FC and CONV layers typically consume more than 99% of the total used computation and storage resources.
+Increase performance:
+•	More computation units: reduce unit size, reduce precision (may reduce accuracy)
+•	Increase utilization efficiency: parallelism, time-multiplexing, efficient memory/ocm use and scheduling.
+•	Increase working frequency
+•	Sparsification: settings more wieghts to zero
+Compression:
+•	Searching a good network structure.
+•	Skipping layers at runtime.
+•	Quantization of weights and activations.
+•	Linear-quantization: nearest fixed-point representation (suffers over/under-flow).
+•	Non-linear-quantization: cluster weight values and assign to binary codes, potential for up to 16x model size compression with little or no loss in accuracy.
+Weight Reduction:
+•	Approximate weight matrix using low-rank representation (SVD) providing 4x improvement and <1% accuracy loss.
+•	Pruning: remove zero weights, apply L1 normalization to weights during training, up to 10x speed improvement.
+
+[19] https://arxiv.org/pdf/1603.07285 -> has equations
+Pooling works by sliding a window across the input and feeding the content
+of the window to a pooling function. In some sense, pooling works very much
+like a discrete convolution, but replaces the linear combination described by the
+kernel with some other function
+
+[20] https://ieeexplore.ieee.org/document/8279827
+A typical CNN takes a very long development round on FPGAs, hence in this paper, we propose a tool which allows developers, through a configurable user-interface, to automatically generate VHDL code for their desired CNN model. The generated code or architecture is modular, massively parallel, reconfigurable, scalable, fully pipelined, and adaptive to different CNN models. We demonstrate the automatic VHDL generator and its adaptability by implementing a small-scale CNN model “LeNet” and a large-scale one “AlexNet”. The parameters of small scale models are automatically hard-coded as constants

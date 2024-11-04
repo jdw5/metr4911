@@ -1,0 +1,23 @@
+\chapter[Introduction]{Introduction}
+
+\label{Chap:Motivation}
+
+\section{Motivation}
+
+In recent years, the demand for efficient and versatile image processing systems has surged across various domains, including surveillance, medical imaging, autonomous vehicles, and more. 
+Field Programmable Gate Arrays (FPGAs) provide a reconfigurable, low-power embedded platform with parallel processing capabilities akin to graphic processing units (GPUs) commonly used to accelerate demanding computing tasks. 
+Image processing is a good candidate for such application of parallel processing, due to the increasing algorithm complexity and large volume of data involved. \cite{Efficient}
+Hence, FPGAs could provide a suitable platform for real-time image processing tasks, offering a balance of performance, power efficiency, and flexibility.
+
+One significant aspect of image processing systems is the choice of the underlying processor architecture. 
+Traditional approaches often rely on general-purpose CPUs or GPUs to execute image processing tasks. 
+However, these architectures may not always offer the best balance of performance, power efficiency, and flexibility for image processing applications. 
+In recent years, the RISC-V instruction set architecture (ISA) has gained traction as an open, customizable, and energy-efficient alternative to proprietary processor designs.
+These soft processors can be implemented on FPGAs, providing a controllable and scalable platform for real-time image processing tasks whilst enabling the processing tasks to be performed in parallel.
+
+This project will focus on the exploration and implementation of image detection algorithms using the RISC-V processor architecture deployed on an FPGA platform. 
+By leveraging the configurability of FPGAs and the energy efficiency of the RISC-V ISA, this research aims to develop a scalable and adaptable solution for image processing using FPGA-accelerated hardware.
+The data processing capacity is large that the processing speed must be strict to meet the demands of real-time time image transmission \cite{Video}.
+Hence, an FPGA system-on-chip (SoC) offers a means for a low power consumption, low latency but high throughput platform - all of which are essential for the increasing computational demands of image processing tasks \cite{Throughput}.
+
+The work will produce a hardware implementation of an image processing system that can be controlled by a RISC-V processor, and demonstrate the benefits of FPGA-based hardware acceleration for image detection tasks.

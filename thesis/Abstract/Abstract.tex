@@ -1,0 +1,42 @@
+% ***************************************************
+% Abstract
+% ***************************************************
+% TO PRODUCE A STAND-ALONE PDF OF YOUR ABSTRACT, uncomment this section and the \end{document} at the end of the file by removing the % from the start of each line.
+
+%\documentclass[12pt, a4paper]{memoir}
+
+%\input{LaTexPackages.tex}
+
+%\begin{document}
+
+%\begin{center}
+	%\textbf{\large Your title goes here}
+
+	%\textbf{Abstract}
+
+	%Your Name, The University of Queensland, 20??
+%\end{center}
+
+This thesis presents an extensible approach for implementing convolution-based image processing algorithms on a RISC-V system on chip. A RISC-V system on chip is interfaced with a Xilinx Artix-7 FPGA using a Wishbone B4 bus interface for hardware acceleration of convolution operations.
+The aim of this thesis is to explore the feasibility of implementing hardware acceleration of convolutional neural networks (CNNs) on FPGAs by optimising the convolution layer at hardware for highly resource-constrained devices.
+
+Three architectural approaches for convolution are presented to overcome the resource constraints of FPGAs: a fully parallel implementation achieving maximum throughput but exceeding available resources, a partially folded architecture presenting a tradeoff between throughput and resource utilisation, and a fully folded single-MAC implementation.
+The design is validated using an 8x8 pixel grayscale digit dataset with 8-bit precision, representing a storage size of 2040 bytes. 
+A pooling layer, activation function and fully connected layer are added to the design to form a complete CNN through generic VHDL modules.
+The CNN achieves an 87\% accuracy on the dataset, and is quantized to reduce the bit width from a 32-bit floating point representation to an 8-bit integer representation without loss of accuracy.
+
+The convolution operation is benchmarked as it is the primary bottleneck for latency in a CNN, due to the number of SIMD operations required.
+The fully parallel implementation is shown to be impractical for the given FPGA, due to the limited resources available but is capable of completing the operation in a single clock cycle.
+The partially folded design provides a 88x reduction in utilisation of the FPGA resources while completing the operation in 49 clock cycles for the given dataset (49x).
+A fully folded implementation is suboptimal, as the extra control logic required to manage the dataflow requires significant additional resources which negates the use of a single MAC whilst increasing the latency, with the operation completing in 1960 clock cycles.
+Assembling the blocks and connecting it to a RISC-V system on chip is shown to be a feasible approach with folding introduced to enable synthesis.
+
+The partially folded architecture emerged as the optimal solution, demonstrating 46.9x speedup over CPU implementation while requiring minimal FPGA resources.
+However, the design is not as performant as a GPU, with a throughput of 204,000 images/s compared to 980,000 images/s for a GPU (P100).
+This is not a constraint on the speed of the design, but rather a limitation of the FPGA due to constraints on the number of MAC units that can be implemented.
+Quantitative analysis shows the partially folded implementation achieves an efficiency metric of 26,153.8 images/s per percentage LUT utilization, significantly outperforming the fully folded design's 4,159.9 efficiency.
+This also surpasses the parallel implementation's 1,159.9 efficiency, due to the large number of MACs required.
+The approach is limited by the size of the convolution kernel due to timing constraints, as larger kernels introduce quadratic increases in computational latency.
+The produced layers are synthesizable and can be used as a building block for future hardware accelerators on a system on chip.
+
+%\end{document}

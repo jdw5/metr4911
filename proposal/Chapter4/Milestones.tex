@@ -1,0 +1,73 @@
+\chapter[Milestones]{Research Plan}
+
+\label{Chap:Milestones}
+
+\section{Milestones}
+To track the development of the project, a set of milestones have been established with consideration of assessable dates. 
+Table \ref{tab:milestones} below outlines the milestones for the work and what is required for each phase.
+Emboldened text indicates an assessable milestone.
+
+
+\begin{center}
+    \small
+    \begin{longtable}{p{0.25\linewidth}p{0.5\linewidth}p{0.15\linewidth}}
+        \caption{Timeline of milestones.} \label{tab:milestones} \\
+        \toprule
+        Milestone & Description & Date \\
+        \midrule
+        \endfirsthead
+        
+        \caption{Timeline of milestones. (continued)} \\
+        \toprule
+        Milestone & Description & Date \\
+        \midrule
+        \endhead
+        
+        \bottomrule
+        \multicolumn{3}{r}{\textit{Continued on next page}} \\
+        \endfoot
+        
+        \bottomrule
+        \endlastfoot
+        
+        \textbf{Project Proposal}	& Complete the project proposal and literature review.                                              & 21/3 \\
+        Configure hardware			& Implement NEORV32 processor on FPGA, connect to external components through wishbone interface.   & 15/4 \\
+        \textbf{Seminar}            & Present the current project status.                                                               & 6/5 \\
+        Image detection algorithm   & Select and implement image detection algorithm in hardware.                                       & 12/8 \\
+        VGA driver                  & Develop driver and interface to display processed image on VGA monitor.                           & 9/9 \\
+        Benchmark                   & Benchmark system performance against related works.                                               & 4/10 \\
+        \textbf{Demo}               & Demonstrate the complete project.                                                                 & 18/10 \\
+        \textbf{Thesis}             & Document and write project results.                                                               & 4/11 \\
+    \end{longtable}
+\end{center}
+
+\nopagebreak
+
+The timeline was developed based on the expected time to completion for each task. A more detailed overview of the non-assessable tasks required for each milestone is provided in the following sections.
+
+\subsection{Configure Hardware}
+This task has been allocated three weeks of work, estimated at 20 hours of work. 
+It entails the implementation of the NEORV32 processor on the FPGA, and the connection of the processor to the external components through the wishbone interface.
+
+\subsection{Image Detection Algorithm}
+This task has been allocated three months of work, estimated at 100 hours of work.
+It requires the selection, implementation, and testing of the image detection algorithm in hardware.
+Furthermore, it must additionally interface with the NEORV32 processor, and be able to be controlled by the processor.
+As it is the core of the project, it has been allocated the most time.
+
+\subsection{VGA Driver}
+This task has been allocated four weeks of work, estimated at 30 hours of work.
+The task requires the development of a driver and interface to display the processed image on a VGA monitor for the selected algorithm.
+It is expected to be a relatively simple task, but has been allocated additional time for any unforeseen issues.
+
+\subsection{Benchmark}
+This task has been allocated four weeks of work, estimated at 30 hours of work.
+It requires the benchmarking of the system performance against related works, and the documentation of the results.
+The task is required to provide an assessment of the project's success against the performance indicators.
+
+
+\section{Risk Assessment}
+This project is conducted in the low-risk laboratory covered by general OHS laboratory rules, and in a home setting. 
+There are no hazardous materials or dangerous equipment used in the project, and the risk of injury is negligible.
+The only risk to the project is hardware failure or proprietary software issues, which can be mitigated by using open-source software and hardware, and regular backups of the project files.
+Redundancies are also in place for hardware failure, as two FPGA developments boards are designated for use.

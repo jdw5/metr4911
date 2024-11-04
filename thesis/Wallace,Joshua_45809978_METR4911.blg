@@ -1,0 +1,53 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: Wallace,Joshua_45809978_METR4911.aux
+Reallocating 'name_of_file' (item size: 1) to 15 items.
+The style file: elsarticle-num.bst
+Reallocating 'name_of_file' (item size: 1) to 26 items.
+Reallocating 'name_of_file' (item size: 1) to 24 items.
+A level-1 auxiliary file: ./Appendix/Appendix.aux
+Database file #1: ./References/Bibliography.bib
+Warning--empty year in Mathworks
+Warning--empty year in Arm
+You've used 48 entries,
+            2952 wiz_defined-function locations,
+            978 strings with 16058 characters,
+and the built_in function-call counts, 18215 in all, are:
+= -- 1735
+> -- 513
+< -- 29
++ -- 203
+- -- 155
+* -- 1174
+:= -- 2229
+add.period$ -- 87
+call.type$ -- 48
+change.case$ -- 53
+chr.to.int$ -- 0
+cite$ -- 50
+duplicate$ -- 679
+empty$ -- 2176
+format.name$ -- 193
+if$ -- 4976
+int.to.chr$ -- 0
+int.to.str$ -- 48
+missing$ -- 38
+newline$ -- 198
+num.names$ -- 45
+pop$ -- 380
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 1377
+stack$ -- 0
+substring$ -- 817
+swap$ -- 316
+text.length$ -- 29
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 2
+while$ -- 108
+width$ -- 50
+write$ -- 506
+(There were 2 warnings)

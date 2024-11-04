@@ -1,0 +1,61 @@
+\chapter[Introduction]{Introduction}
+\label{Chap:Intro}
+
+% ***************************************************
+% Introduction
+% ***************************************************
+
+
+\section{Motivation}
+
+In recent years, the demand for efficient and versatile image processing systems has surged across various domains, including surveillance, medical imaging, autonomous vehicles, and more. 
+Field Programmable Gate Arrays (FPGAs) provide a reconfigurable, low-power embedded platform with parallel processing capabilities akin to graphic processing units (GPUs) commonly used to accelerate demanding computing tasks. 
+Image processing is a good candidate for such application of parallel processing, due to the increasing algorithm complexity and large volume of data involved \cite{Efficient}.
+These processes have a shared step in the form of convolution, which is a compute-heavy operation often parallelised in software-based implementations.
+Hence, FPGAs could provide a suitable platform for real-time image processing tasks, offering a balance of performance, power efficiency, and flexibility.
+
+One significant aspect of image processing systems is the choice of the underlying processor architecture. 
+Traditional approaches often rely on general-purpose CPUs or GPUs to execute image processing tasks. 
+However, these architectures may not always offer the best balance of performance, power efficiency, and flexibility for image processing applications. 
+In recent years, the RISC-V instruction set architecture (ISA) has gained traction as an open, customizable, and energy-efficient alternative to proprietary processor designs.
+These soft processors can be implemented on FPGAs, providing a controllable and scalable platform for deferring image processing tasks to dedicated hardware, enabling for parallelisation.
+
+This project will focus on the exploration and implementation of image detection algorithms using the RISC-V processor architecture deployed on an FPGA platform. 
+By leveraging the configurability of FPGAs and the energy efficiency of the RISC-V ISA, this research aims to develop a scalable and adaptable solution for handling the core component of image processing tasks using FPGA-accelerated hardware.
+The data processing capacity is large that the processing speed must be strict to meet the demands of real-time time image transmission \cite{Video}.
+Hence, an FPGA system-on-chip (SoC) offers a means for a low power consumption, low latency but high throughput platform - all of which are essential for the increasing computational demands of image processing tasks \cite{Throughput}.
+
+The work will produce a hardware implementation of an image processing system that can be controlled by a RISC-V processor, and demonstrate the benefits of FPGA-based hardware acceleration for image processing tasks.
+
+\section{Definition}
+
+Traditional software-based image processing techniques on embedded systems lack the parallelisation of larger distributed systems which use GPU architecture to process images.
+This project aims to provide a robust and extensible platform for image processing tasks which can be used as a building block for more complex image processing pipelines on an FPGA platform.
+By allowing for extensibility of the image processing pipeline, the project aims to provide a flexible platform for future research into the use of FPGAs in the field of image processing.
+
+This projects aims to:
+\begin{itemize}
+    \item Demonstrate the practicality and benefits of FPGA-based hardware acceleration for image processing tasks.
+    \item Illustrate the practicality of neural network layers being applied to resource-limited devices
+    \item Demonstrate the control of an image processing pipeline using a RISC-V softcore processor.
+    \item Evaluate the performance, efficiency, and scalability of a hardware-implemented image processing system.
+\end{itemize}
+
+\section{Scope}
+
+A scope has been defined to better target the aims of this thesis, and exclude any work which is deemed to not be primary to the aims.
+The thesis is focused on implementing a convolutional core, and by extension a convolutional neural network, to be used as a hardware accelerator for image processing tasks, and interfaced to with a RISC-V processor.
+The scopes of this thesis are hence defined as:
+
+\begin{itemize}
+    \item Development of a hardware-implemented convolutional core to accelerate image processing tasks.
+    \item Extension of this core to implement a convolutional neural network.
+    \item Configuration of neural network layers to be mapped onto the FPGA fabric.
+\end{itemize}
+
+There are a number of components which are outside of the scope of this thesis due to the broadness of image processing techniques:
+\begin{itemize}
+    \item Implementing of image processing techniques which use convolution but extend beyond it
+    \item Training of a CNN on FPGA
+    \item Finetuning of a CNNs
+\end{itemize}

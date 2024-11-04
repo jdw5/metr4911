@@ -1,0 +1,26 @@
+\addvspace {10pt}
+\addvspace {10pt}
+\addvspace {10pt}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Pipeline for image analysis techniques \cite {RTEdge}}}{6}{figure.2.1}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Convolution utilising a 3x3 kernel \cite {19}}}{6}{figure.2.2}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Comparison of logic units between CPU and GPU \cite {21}}}{10}{figure.2.3}%
+\addvspace {10pt}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Digilent Basys 3 FPGA development board}}{12}{figure.3.1}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Hardware architecture of the MAC unit showing parallel multipliers and adder tree configuration.}}{14}{figure.3.2}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Convolution operation without folding.}}{15}{figure.3.3}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Hardware representation of the MAC unit.}}{16}{figure.3.4}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Convolution operation with partial folding via the iterator.}}{16}{figure.3.5}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Hardware representation of the MAC unit.}}{17}{figure.3.6}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Hardware implementation of ReLU activation function}}{17}{figure.3.7}%
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Hardware implementation of max pooling layer showing parallel comparator arrangement}}{19}{figure.3.8}%
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Sample images from the downsampled MNIST dataset used for training and inference}}{21}{figure.3.9}%
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Model architecture}}{22}{figure.3.10}%
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Hardware representation of the MAC unit.}}{23}{figure.3.11}%
+\addvspace {10pt}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Comparison of relative performance of Nvidia GPUs \cite {23}.}}{27}{figure.4.1}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Logarithmic scale of the latency of the design against the CPU and GPUs selected.}}{28}{figure.4.2}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Simulation waveform demonstrating fully parallelised implementation timing.}}{29}{figure.4.3}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Simulation waveform demonstrating partially folded implementation timing.}}{30}{figure.4.4}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Simulation waveform demonstrating the extensibility of the design.}}{35}{figure.4.5}%
+\addvspace {10pt}
+\addvspace {10pt}

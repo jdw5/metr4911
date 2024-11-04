@@ -1,0 +1,84 @@
+----------------------------------------
+Input Size:             8 x 8 x 1
+Kernel Size:            2 x 2 x 1 x 10
+Output Feature Size:    7 x 7 x 10
+Resolution:             8 - bit
+Stride Steps:           1
+Zero Padding:           0
+ReLU Activation:        0
+Number of Batches:      1
+----------------------------------------
+Check Passed. All 490 data items match.
+----------------------------------------
+Convolution operation time: 223891 nanoseconds
+Convolution operation time: 0.223891 milliseconds
+Convolution operation time: 0.000223891 seconds
+----------------------------------------
+
+----------------------------------------
+Input Size:             8 x 8 x 1
+Kernel Size:            2 x 2 x 1 x 10
+Output Feature Size:    7 x 7 x 10
+Resolution:             8 - bit
+Stride Steps:           1
+Zero Padding:           0
+ReLU Activation:        0
+Number of Batches:      1
+----------------------------------------
+Check Passed. All 490 data items match.
+----------------------------------------
+Convolution operation time: 252755 nanoseconds
+Convolution operation time: 0.252755 milliseconds
+Convolution operation time: 0.000252755 seconds
+----------------------------------------
+
+----------------------------------------
+Input Size:             8 x 8 x 1
+Kernel Size:            2 x 2 x 1 x 10
+Output Feature Size:    7 x 7 x 10
+Resolution:             8 - bit
+Stride Steps:           1
+Zero Padding:           0
+ReLU Activation:        0
+Number of Batches:      1
+----------------------------------------
+Check Passed. All 490 data items match.
+----------------------------------------
+Convolution operation time: 229782 nanoseconds
+Convolution operation time: 0.229782 milliseconds
+Convolution operation time: 0.000229782 seconds
+----------------------------------------
+
+----------------------------------------
+Input Size:             8 x 8 x 1
+Kernel Size:            2 x 2 x 1 x 10
+Output Feature Size:    7 x 7 x 10
+Resolution:             8 - bit
+Stride Steps:           1
+Zero Padding:           0
+ReLU Activation:        0
+Number of Batches:      1
+----------------------------------------
+Check Passed. All 490 data items match.
+----------------------------------------
+Convolution operation time: 249048 nanoseconds
+Convolution operation time: 0.249048 milliseconds
+Convolution operation time: 0.000249048 seconds
+----------------------------------------
+
+----------------------------------------
+Input Size:             8 x 8 x 1
+Kernel Size:            2 x 2 x 1 x 10
+Output Feature Size:    7 x 7 x 10
+Resolution:             8 - bit
+Stride Steps:           1
+Zero Padding:           0
+ReLU Activation:        0
+Number of Batches:      1
+----------------------------------------
+Check Passed. All 490 data items match.
+----------------------------------------
+Convolution operation time: 213342 nanoseconds
+Convolution operation time: 0.213342 milliseconds
+Convolution operation time: 0.000213342 seconds
+----------------------------------------

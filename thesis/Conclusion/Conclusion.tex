@@ -1,0 +1,40 @@
+\chapter[Conclusion]{Conclusion}
+\label{Chap:Conclusion}
+
+This chapter summarizes the key findings and contributions of this thesis, discussing both the achievements and limitations of the hardware-based CNN implementation. Additionally, it outlines potential future work and recommendations for extending the design.
+
+\section{Summary}
+
+The research demonstrates the viability of hardware-accelerated convolution operations for resource-constrained embedded systems. Through the implementation and analysis of three distinct approaches to hardware convolution, this thesis has shown that effective trade-offs between parallelization and resource utilization are crucial for practical FPGA-based CNN acceleration.
+
+The partially folded implementation emerged as the most effective solution, offering an optimal balance between resource utilization and performance. While the fully unrolled design theoretically offers maximum throughput, FPGA resource constraints, as discussed in Section \ref{sec:platforms}, made this approach impractical for real-world deployment. The fully folded implementation, despite its minimal resource usage, introduced significant control overhead that ultimately negated its resource advantages, aligning with the findings from previous research on hardware-based CNN implementations.
+
+The integration with the NEORV32 RISC-V processor proved particularly significant, demonstrating a practical approach to hardware acceleration in SoC designs. As explored in the literature review, RISC-V's open-source nature and extensibility make it an ideal choice for embedded systems. The processor effectively manages data flow and control operations while offloading compute-intensive tasks to dedicated hardware accelerators, creating an efficient architecture for resource-constrained environments.
+
+\section{Key Contributions}
+
+This thesis contributes to the field of hardware-accelerated neural networks by developing configurable, generic hardware blocks for CNN implementation. This addresses the need for flexible, resource-efficient solutions in embedded systems. The successful integration with RISC-V demonstrates a practical approach to hardware acceleration, building upon existing research in FPGA-based CNN implementations.
+
+The analysis of resource-performance trade-offs provides valuable insights for future FPGA-based CNN acceleration projects. The implementation of parallel MAC units with configurable folding factors offers a flexible solution that can be adapted to various resource constraints, addressing a key challenge identified in the literature review regarding the balance between parallelization and resource utilization.
+
+\section{Limitations}
+
+The research revealed several important limitations that warrant further investigation. Resource constraints fundamentally limit the maximum achievable parallelization, a challenge consistently noted in FPGA-based CNN implementations. As image and kernel sizes increase, timing constraints become increasingly problematic, necessitating more sophisticated approaches to maintain performance.
+
+While the performance gap compared to GPU implementations is significant, this limitation stems from the inherent resource constraints of the target environment rather than the implementation approach. As discussed in Section \ref{sec:platforms}, GPUs benefit from thousands of CUDA cores and specialized architectures for parallel processing, advantages that cannot be replicated in resource-constrained FPGA environments.
+
+The current implementation's lack of direct camera interface integration and the need for off-chip memory to store weights for large neural networks represent practical limitations that affect real-world deployment. These challenges align with those identified in previous research on embedded CNN implementations.
+
+\section{Future Work}
+
+Future research should focus on several key areas to address the identified limitations while maintaining the resource-efficient approach demonstrated in this thesis. Hardware optimizations could include the development of parallel adder trees or multi-cycle paths to address timing issues with larger kernels, building upon existing research in FPGA-based convolution implementations.
+
+The RISC-V integration offers particularly promising avenues for future development. Custom instruction set extensions for CNN operations could further optimize performance, leveraging RISC-V's extensible nature as discussed in the literature review. The development of hardware-specific compiler optimizations and efficient memory-mapped interfaces could enhance the system's overall efficiency.
+
+System integration represents another crucial area for future work. The integration of camera modules with real-time processing capabilities would enhance the practical applicability of the system. Development of efficient weight loading mechanisms and power management features would address current limitations in handling larger neural networks and improve system efficiency.
+
+The generic nature of the developed hardware blocks provides a strong foundation for building complete CNN systems, while the RISC-V integration demonstrates a practical approach to hardware acceleration in embedded systems. Future work should focus on addressing the identified limitations while maintaining the resource-efficient approach demonstrated in this thesis.
+
+In conclusion, this research highlights the potential of FPGA-based CNN acceleration for embedded systems, while acknowledging the inherent limitations of resource-constrained environments. The developed architecture, particularly the integration with RISC-V, provides a practical framework for future developments in hardware-accelerated machine learning applications. The findings contribute to the growing body of research on efficient hardware implementations of neural networks and offer valuable insights for future work in this field.
+
+

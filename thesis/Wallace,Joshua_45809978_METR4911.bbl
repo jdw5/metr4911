@@ -1,0 +1,334 @@
+\begin{thebibliography}{10}
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{\texttt{#1}}\fi
+\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
+\expandafter\ifx\csname href\endcsname\relax
+  \def\href#1#2{#2} \def\path#1{#1}\fi
+
+\bibitem{RTEdge}
+C.~Ye, Real-time image edge detection system design and algorithms for
+  artificial intelligence fpgas, in: 2022 International Conference on
+  Artificial Intelligence of Things and Crowdsensing (AIoTCs), 2022, pp.
+  476--481.
+\newblock \href {https://doi.org/10.1109/AIoTCs58181.2022.00081}
+  {\path{doi:10.1109/AIoTCs58181.2022.00081}}.
+
+\bibitem{19}
+V.~Dumoulin, F.~Visin, \href{https://arxiv.org/abs/1603.07285}{A guide to
+  convolution arithmetic for deep learning} (2018).
+\newblock \href {http://arxiv.org/abs/1603.07285} {\path{arXiv:1603.07285}}.
+\newline\urlprefix\url{https://arxiv.org/abs/1603.07285}
+
+\bibitem{21}
+NxtGen, {World of CPU, GPU \& FPGA Simplified},
+  \url{https://nxtgen.com/World-of-CPU-GPU-&-FPGA-Simplified}, rajesh Dangi
+  (Oct. 2019).
+
+\bibitem{23}
+NVIDIA, {NVIDIA A100 Tensor Core GPU},
+  \url{https://www.nvidia.com/en-in/data-center/a100/}, standard (2024).
+
+\bibitem{Efficient}
+R.~Khosla, B.~Singh, Implementation of efficient image processing algorithm on
+  fpga, in: 2013 International Conference on Machine Intelligence and Research
+  Advancement, 2013, pp. 335--339.
+\newblock \href {https://doi.org/10.1109/ICMIRA.2013.70}
+  {\path{doi:10.1109/ICMIRA.2013.70}}.
+
+\bibitem{Video}
+X.~Wei, G.-M. Du, X.~Wang, H.~Cao, S.~Hu, D.~Zhang, Z.~Li, Fpga implementation
+  of hardware accelerator for real-time video image edge detection, in: 2021
+  IEEE 15th International Conference on Anti-counterfeiting, Security, and
+  Identification (ASID), 2021, pp. 16--20.
+\newblock \href {https://doi.org/10.1109/ASID52932.2021.9651710}
+  {\path{doi:10.1109/ASID52932.2021.9651710}}.
+
+\bibitem{Throughput}
+S.~Yin, S.~Tang, X.~Lin, P.~Ouyang, F.~Tu, L.~Liu, S.~Wei, A high throughput
+  acceleration for hybrid neural networks with efficient resource management on
+  fpga, IEEE Transactions on Computer-Aided Design of Integrated Circuits and
+  Systems 38~(4) (2019) 678--691.
+\newblock \href {https://doi.org/10.1109/TCAD.2018.2821561}
+  {\path{doi:10.1109/TCAD.2018.2821561}}.
+
+\bibitem{Mathworks}
+Image analysis, \url{https://www.mathworks.com/discovery/image-analysis.html}.
+
+\bibitem{Gradient}
+B.~K. Upadhyaya, D.~Chakraborty, Fpga implementation of gradient based edge
+  detection algorithms for real time image, in: 2018 2nd International
+  Conference on Trends in Electronics and Informatics (ICOEI), 2018, pp.
+  1227--1233.
+\newblock \href {https://doi.org/10.1109/ICOEI.2018.8553820}
+  {\path{doi:10.1109/ICOEI.2018.8553820}}.
+
+\bibitem{Segmentation}
+A.~B. N, M.~Afsar, K.~K. Khaitan, Rahul, C.~Gururaj, Optimized fpga
+  implementation and synthesis of image segmentation techniques, in: 2021 IEEE
+  Mysore Sub Section International Conference (MysuruCon), 2021, pp. 191--196.
+\newblock \href {https://doi.org/10.1109/MysuruCon52639.2021.9641613}
+  {\path{doi:10.1109/MysuruCon52639.2021.9641613}}.
+
+\bibitem{XSG}
+G.~B. Reddy, K.~Anusudha, Implementation of image edge detection on fpga using
+  xsg, in: 2016 International Conference on Circuit, Power and Computing
+  Technologies (ICCPCT), 2016, pp. 1--5.
+\newblock \href {https://doi.org/10.1109/ICCPCT.2016.7530374}
+  {\path{doi:10.1109/ICCPCT.2016.7530374}}.
+
+\bibitem{Sobel}
+S.~Yaman, B.~Karakaya, Y.~Erol, Real time edge detection via ip-core based
+  sobel filter on fpga, in: 2019 International Conference on Applied Automation
+  and Industrial Diagnostics (ICAAID), Vol.~1, 2019, pp. 1--4.
+\newblock \href {https://doi.org/10.1109/ICAAID.2019.8934964}
+  {\path{doi:10.1109/ICAAID.2019.8934964}}.
+
+\bibitem{Canny}
+D.~Sangeetha, P.~Deepa, An efficient hardware implementation of canny edge
+  detection algorithm, in: 2016 29th International Conference on VLSI Design
+  and 2016 15th International Conference on Embedded Systems (VLSID), 2016, pp.
+  457--462.
+\newblock \href {https://doi.org/10.1109/VLSID.2016.68}
+  {\path{doi:10.1109/VLSID.2016.68}}.
+
+\bibitem{Aerial}
+R.~Harinarayan, R.~Pannerselvam, M.~Mubarak~Ali, D.~Kumar~Tripathi, Feature
+  extraction of digital aerial images by fpga based implementation of edge
+  detection algorithms, in: 2011 International Conference on Emerging Trends in
+  Electrical and Computer Technology, 2011, pp. 631--635.
+\newblock \href {https://doi.org/10.1109/ICETECT.2011.5760194}
+  {\path{doi:10.1109/ICETECT.2011.5760194}}.
+
+\bibitem{SoCImage}
+E.~Gholizadehazari, T.~Ayhan, B.~Ors, An fpga implementation of a risc-v based
+  soc system for image processing applications, in: 2021 29th Signal Processing
+  and Communications Applications Conference (SIU), 2021, pp. 1--4.
+\newblock \href {https://doi.org/10.1109/SIU53274.2021.9477998}
+  {\path{doi:10.1109/SIU53274.2021.9477998}}.
+
+\bibitem{ResourceEfficient}
+Y.~Ma, Q.~Xu, Z.~Song, Resource-efficient optimization for fpga-based
+  convolution accelerator, Electronics 12 (2023) 4333.
+\newblock \href {https://doi.org/10.3390/electronics12204333}
+  {\path{doi:10.3390/electronics12204333}}.
+
+\bibitem{7}
+F.~Talbi, F.~Alim, S.~Seddiki, I.~Mezzah, B.~Hachemi, Separable convolution
+  gaussian smoothing filters on a xilinx fpga platform, in: Fifth International
+  Conference on the Innovative Computing Technology (INTECH 2015), 2015, pp.
+  112--117.
+\newblock \href {https://doi.org/10.1109/INTECH.2015.7173372}
+  {\path{doi:10.1109/INTECH.2015.7173372}}.
+
+\bibitem{18}
+K.~Guo, S.~Zeng, J.~Yu, Y.~Wang, H.~Yang,
+  \href{http://arxiv.org/abs/1712.08934}{A survey of {FPGA} based neural
+  network accelerator}, CoRR abs/1712.08934 (2017).
+\newblock \href {http://arxiv.org/abs/1712.08934} {\path{arXiv:1712.08934}}.
+\newline\urlprefix\url{http://arxiv.org/abs/1712.08934}
+
+\bibitem{3}
+V.~Sze, Y.~Chen, T.~Yang, J.~S. Emer,
+  \href{http://arxiv.org/abs/1703.09039}{Efficient processing of deep neural
+  networks: {A} tutorial and survey}, CoRR abs/1703.09039 (2017).
+\newblock \href {http://arxiv.org/abs/1703.09039} {\path{arXiv:1703.09039}}.
+\newline\urlprefix\url{http://arxiv.org/abs/1703.09039}
+
+\bibitem{2}
+N.~Ma, X.~Zhang, H.~Zheng, J.~Sun,
+  \href{http://arxiv.org/abs/1807.11164}{Shufflenet {V2:} practical guidelines
+  for efficient {CNN} architecture design}, CoRR abs/1807.11164 (2018).
+\newblock \href {http://arxiv.org/abs/1807.11164} {\path{arXiv:1807.11164}}.
+\newline\urlprefix\url{http://arxiv.org/abs/1807.11164}
+
+\bibitem{11}
+R.~Kuramochi, Y.~Sada, M.~Shimoda, S.~Sato, H.~Nakahara, Many universal
+  convolution cores for ensemble sparse convolutional neural networks, in: 2019
+  IEEE 13th International Symposium on Embedded Multicore/Many-core
+  Systems-on-Chip (MCSoC), 2019, pp. 93--100.
+\newblock \href {https://doi.org/10.1109/MCSoC.2019.00021}
+  {\path{doi:10.1109/MCSoC.2019.00021}}.
+
+\bibitem{1}
+S.~Lu, J.~Chu, X.~T. Liu, Im2win: Memory efficient convolution on simd
+  architectures, in: 2022 IEEE High Performance Extreme Computing Conference
+  (HPEC), 2022, pp. 1--7.
+\newblock \href {https://doi.org/10.1109/HPEC55821.2022.9926408}
+  {\path{doi:10.1109/HPEC55821.2022.9926408}}.
+
+\bibitem{20}
+M.~K. Hamdan, D.~T. Rover, Vhdl generator for a high performance convolutional
+  neural network fpga-based accelerator, in: 2017 International Conference on
+  ReConFigurable Computing and FPGAs (ReConFig), 2017, pp. 1--6.
+\newblock \href {https://doi.org/10.1109/RECONFIG.2017.8279827}
+  {\path{doi:10.1109/RECONFIG.2017.8279827}}.
+
+\bibitem{14}
+X.~Zhang, J.~Yang, A high performance fpga-based accelerator for mobilenet, in:
+  2022 International Conference on Informatics, Networking and Computing
+  (ICINC), 2022, pp. 81--85.
+\newblock \href {https://doi.org/10.1109/ICINC58035.2022.00024}
+  {\path{doi:10.1109/ICINC58035.2022.00024}}.
+
+\bibitem{12}
+A.~Demidovskij, E.~Smirnov, Effective post-training quantization of neural
+  networks for inference on low power neural accelerator, in: 2020
+  International Joint Conference on Neural Networks (IJCNN), 2020, pp. 1--7.
+\newblock \href {https://doi.org/10.1109/IJCNN48605.2020.9207281}
+  {\path{doi:10.1109/IJCNN48605.2020.9207281}}.
+
+\bibitem{16}
+C.~Baskin, N.~Liss, E.~Zheltonozhskii, A.~M. Bronstein, A.~Mendelson, Streaming
+  architecture for large-scale quantized neural networks on an fpga-based
+  dataflow platform, in: 2018 IEEE International Parallel and Distributed
+  Processing Symposium Workshops (IPDPSW), 2018, pp. 162--169.
+\newblock \href {https://doi.org/10.1109/IPDPSW.2018.00032}
+  {\path{doi:10.1109/IPDPSW.2018.00032}}.
+
+\bibitem{Drowsiness}
+S.~K. Mousavikia, E.~Gholizadehazari, M.~Mousazadeh, S.~B.~O. Yalcin,
+  Instruction set extension of a riscv based soc for driver drowsiness
+  detection, IEEE Access 10 (2022) 58151--58162.
+\newblock \href {https://doi.org/10.1109/ACCESS.2022.3177743}
+  {\path{doi:10.1109/ACCESS.2022.3177743}}.
+
+\bibitem{Yolo}
+G.~Zhang, K.~Zhao, B.~Wu, Y.~Sun, L.~Sun, F.~Liang, A risc-v based hardware
+  accelerator designed for yolo object detection system, in: 2019 IEEE
+  International Conference of Intelligent Applied Systems on Engineering
+  (ICIASE), 2019, pp. 9--11.
+\newblock \href {https://doi.org/10.1109/ICIASE45644.2019.9074051}
+  {\path{doi:10.1109/ICIASE45644.2019.9074051}}.
+
+\bibitem{SparseYolo}
+Z.~Wang, K.~Xu, S.~Wu, L.~Liu, L.~Liu, D.~Wang, Sparse-yolo: Hardware/software
+  co-design of an fpga accelerator for yolov2, IEEE Access 8 (2020)
+  116569--116585.
+\newblock \href {https://doi.org/10.1109/ACCESS.2020.3004198}
+  {\path{doi:10.1109/ACCESS.2020.3004198}}.
+
+\bibitem{Overhead}
+J.~He, W.~Li, J.~Xu, M.~Zhang, H.~Yang, Research on convolution decomposition
+  and hardware acceleration based on fpga, in: 2023 4th International
+  Conference on Computer Engineering and Application (ICCEA), 2023, pp.
+  285--291.
+\newblock \href {https://doi.org/10.1109/ICCEA58433.2023.10135385}
+  {\path{doi:10.1109/ICCEA58433.2023.10135385}}.
+
+\bibitem{Arm}
+ARM, \href{https://www.arm.com/glossary/risc}{Risc (reduced instruction set
+  computing)}, ARM Glossary.
+\newline\urlprefix\url{https://www.arm.com/glossary/risc}
+
+\bibitem{Neutron}
+K.~Böhmer, B.~Forlin, C.~Cazzaniga, P.~Rech, G.~Furano, N.~Alachiotis,
+  M.~Ottavi, Neutron radiation tests of the neorv32 risc-v soc on flash-based
+  fpgas, in: 2023 IEEE International Symposium on Defect and Fault Tolerance in
+  VLSI and Nanotechnology Systems (DFT), 2023, pp. 1--6.
+\newblock \href {https://doi.org/10.1109/DFT59622.2023.10313556}
+  {\path{doi:10.1109/DFT59622.2023.10313556}}.
+
+\bibitem{RISCFPGA}
+L.~Poli, S.~Saha, X.~Zhai, K.~D. Mcdonald-Maier, Design and implementation of a
+  risc v processor on fpga, in: 2021 17th International Conference on Mobility,
+  Sensing and Networking (MSN), 2021, pp. 161--166.
+\newblock \href {https://doi.org/10.1109/MSN53354.2021.00037}
+  {\path{doi:10.1109/MSN53354.2021.00037}}.
+
+\bibitem{DCT}
+T.~Harmina, D.~Hofman, J.~Benjak, Dct implementation on a custom fpga risc-v
+  processor, in: 2023 International Symposium ELMAR, 2023, pp. 163--167.
+\newblock \href {https://doi.org/10.1109/ELMAR59410.2023.10253892}
+  {\path{doi:10.1109/ELMAR59410.2023.10253892}}.
+
+\bibitem{NEORV32}
+S.~Nolting, The neorv32 risc-v processor,
+  \url{https://stnolting.github.io/neorv32/} (2024).
+
+\bibitem{Cryptography}
+D.-T. Nguyen-Hoang, K.-M. Ma, D.-L. Le, H.-H. Thai, T.-B.-T. Cao, D.-H. Le,
+  Implementation of a 32-bit risc-v processor with cryptography accelerators on
+  fpga and asic, in: 2022 IEEE Ninth International Conference on Communications
+  and Electronics (ICCE), 2022, pp. 219--224.
+\newblock \href {https://doi.org/10.1109/ICCE55644.2022.9852060}
+  {\path{doi:10.1109/ICCE55644.2022.9852060}}.
+
+\bibitem{Reconfigurable}
+N.~Wu, T.~Jiang, L.~Zhang, F.~Zhou, F.~Ge,
+  \href{https://doi.org/10.3390/electronics9061005}{A reconfigurable
+  convolutional neural network-accelerated coprocessor based on risc-v
+  instruction set}, Electronics 9~(6) (2020) 1005.
+\newblock \href {https://doi.org/10.3390/electronics9061005}
+  {\path{doi:10.3390/electronics9061005}}.
+\newline\urlprefix\url{https://doi.org/10.3390/electronics9061005}
+
+\bibitem{Parallelism}
+N.~R, \href{https://www.logic-fruit.com/blog/fpga/fpgas-vs-gpus/}{Fpgas vs gpus
+  - what’s the difference?} (2023).
+\newline\urlprefix\url{https://www.logic-fruit.com/blog/fpga/fpgas-vs-gpus/}
+
+\bibitem{AsicOptimization}
+A.~S. Hussein, H.~Mostafa, Asic-fpga gap for a risc-v core implementation for
+  dnn applications, in: 2021 3rd Novel Intelligent and Leading Emerging
+  Sciences Conference (NILES), 2021, pp. 385--388.
+\newblock \href {https://doi.org/10.1109/NILES53778.2021.9600503}
+  {\path{doi:10.1109/NILES53778.2021.9600503}}.
+
+\bibitem{15}
+W.~Gong, F.~Zhou, F.~Ge, A multi-mode convolution coprocessor based on risc-v
+  instruction set architecture, in: 2023 IEEE 15th International Conference on
+  ASIC (ASICON), 2023, pp. 1--5.
+\newblock \href {https://doi.org/10.1109/ASICON58565.2023.10396531}
+  {\path{doi:10.1109/ASICON58565.2023.10396531}}.
+
+\bibitem{10}
+L.~Bai, Y.~Zhao, X.~Huang, A cnn accelerator on fpga using depthwise separable
+  convolution, IEEE Transactions on Circuits and Systems II: Express Briefs
+  65~(10) (2018) 1415--1419.
+\newblock \href {https://doi.org/10.1109/TCSII.2018.2865896}
+  {\path{doi:10.1109/TCSII.2018.2865896}}.
+
+\bibitem{4}
+K.~Ho, H.~Zhao, A.~Jog, S.~Mohanty, Improving gpu throughput through parallel
+  execution using tensor cores and cuda cores, in: 2022 IEEE Computer Society
+  Annual Symposium on VLSI (ISVLSI), 2022, pp. 223--228.
+\newblock \href {https://doi.org/10.1109/ISVLSI54635.2022.00051}
+  {\path{doi:10.1109/ISVLSI54635.2022.00051}}.
+
+\bibitem{22}
+NVIDIA, {NVIDIA CUDA}, \url{https://developer.nvidia.com/cuda-zone}, standard
+  (2024).
+
+\bibitem{ResearchFPGA}
+T.~Xiao, M.~Tao, Research on fpga based convolutional neural network
+  acceleration method, in: 2021 IEEE International Conference on Artificial
+  Intelligence and Computer Applications (ICAICA), 2021, pp. 289--292.
+\newblock \href {https://doi.org/10.1109/ICAICA52286.2021.9498022}
+  {\path{doi:10.1109/ICAICA52286.2021.9498022}}.
+
+\bibitem{Xilinx7SeriesDatasheet}
+{7 Series FPGAs Data Sheet: Overview (DS180)},
+  \url{https://docs.xilinx.com/v/u/en-US/ds180_7Series_Overview}, standard
+  (Sep. 2020).
+
+\bibitem{basys}
+{Basys 3 Artix-7 FPGA Trainer Board},
+  \url{https://digilent.com/shop/basys-3-artix-7-fpga-trainer-board-recommended-for-introductory-users/?srsltid=AfmBOor7RCpMxMEfMeDoBMxdHHJt2jnU0G5qF4LpbuussE8VMwzXJ_4e},
+  standard (2024).
+
+\bibitem{DCNN}
+A.~Rastogi, R.~Singh, R.~Sharma, S.~D. Kalony, The survey of digital image
+  analysis with artificial intelligence- dcnn technique, in: 2020 9th
+  International Conference System Modeling and Advancement in Research Trends
+  (SMART), 2020, pp. 209--211.
+\newblock \href {https://doi.org/10.1109/SMART50582.2020.9337062}
+  {\path{doi:10.1109/SMART50582.2020.9337062}}.
+
+\bibitem{17}
+Q.~H. Vo, N.~Linh~Le, F.~Asim, L.-W. Kim, C.~S. Hong, A deep learning
+  accelerator based on a streaming architecture for binary neural networks,
+  IEEE Access 10 (2022) 21141--21159.
+\newblock \href {https://doi.org/10.1109/ACCESS.2022.3151916}
+  {\path{doi:10.1109/ACCESS.2022.3151916}}.
+
+\end{thebibliography}
